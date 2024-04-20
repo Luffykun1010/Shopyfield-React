@@ -1,0 +1,89 @@
+.sign-in {
+    background: #ced4da;
+}
+.sign-in button {
+    width: 15em;
+    height: 2.7em;
+    border: none;
+    border-radius: 2em;
+    margin: 1.5em 0;
+    padding: 0.7em;
+    text-transform: uppercase;
+    background: transparent;
+    color: #252422;
+    border: #252422 2px solid;
+    font-family: 'Mina';
+    transition: all 200ms linear;
+}
+.sign-in button:hover {
+    color: #ced4da;
+    background-color: #252422;
+}
+.sign-in p {
+    margin-top: -1.5em;
+    font-size: 10pt;
+    color: #252422;
+}
+.sign-in a {
+    text-decoration: none;
+    color: #ef233c;
+}
+.sign-in a:hover {
+    color: var(--hovercolor);
+}
+.first-footer {
+    background: #8d99ae;
+    text-align: center;
+    font-size: 10pt;
+}
+.first-footer a{
+    padding: 1em 0;
+    margin: 0.2em 10em;
+    text-decoration: none;
+    color: #FEFAE0;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.first-footer a:hover{
+    color: var(--hovercolor);
+}
+.footer{
+    background: #2b2d42;
+}
+.foot-head{
+    color: #ddb892;
+    font-size: 17pt;
+    font-family: "Mina";
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: default;
+}
+.foot-link{
+    margin-top: -0.7em;
+}
+.foot-link a{
+    text-decoration: none;
+    color: #fdf0d5;
+    opacity: 0.8;
+    font-size: 12pt;
+    padding: 0.3em 0 0 0;
+}
+.last-footer{
+    background: #171717;
+}
+.last-footer div{
+    padding: 1.5em 0 1.2em 0;
+    letter-spacing: 0.25em;
+    color: #90be6d;
+    opacity: 0.6;
+    font-family: 'Mina';
+}
+.last-footer a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #43aa8b;
+    padding-left: 0.2em;
+}
+.last-footer a:hover {
+    color: #f94144;
+}

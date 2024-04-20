@@ -1,0 +1,189 @@
+:root {
+    --textcolor: #6c757d;
+    --hovercolor: #084e75;
+}
+
+@font-face {
+    font-family: 'Mina';
+    src: url('../fonts/mina/Mina-Regular.eot');
+    src: url('../fonts/mina/Mina-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/mina/Mina-Regular.woff2') format('woff2'),
+        url('../fonts/mina/Mina-Regular.woff') format('woff'),
+        url('../fonts/mina/Mina-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.nav-bar,.off-canvas{
+    background-color: #FEFAE0;
+    border-bottom: 0.05px var(--textcolor) solid;
+}
+@media screen and (max-width: 1023px) {
+    .nav-bar {
+        display: none;
+    }
+    .off-canvas {
+        margin-bottom: 0.5em;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .nav-bar {
+        display: block;
+    }
+    .off-canvas {
+        display: none;
+    }
+}
+
+.head-name {
+    font-family: "Mina";
+    text-decoration: none;
+    font-size: 20pt;
+    color: var(--textcolor);
+}
+
+.category {
+    font-family: "Mina";
+    text-decoration: none;
+    color: var(--textcolor);
+    font-size: 12pt;
+    list-style-type: none;
+    padding: 0.8em 1em 0 1em;
+}
+
+.cat-list {
+    padding: 0 2em;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.offc-btn {
+    background: transparent;
+    border: none;
+    padding: 0.4em 0.8em;
+    margin: -0.2em 0;
+}
+
+.offc-btn:hover {
+    border: 1px solid var(--hovercolor);
+}
+
+.offc-btn svg {
+    margin-top: -0.2em;
+}
+
+@keyframes anims {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.anime {
+    animation: anims 2s ease-in;
+}
+
+.offcanvas-bottom {
+    transition: transform 1.5s ease-in-out;
+}
+
+.offcanvas-bottom.show {
+    transform: translateY(0%);
+}
+
+.offcanvas-bottom.hide {
+    transform: translateY(100%);
+}
+.off-anim{
+    animation: canv 3s ease-in-out;
+}
+.off-anim1{
+    animation: canv1 3.1s ease-in-out;
+}
+.off-anim2{
+    animation: canv2 3.2s ease-in-out;
+}
+@keyframes canv {
+    0%,5% {
+        transform: translateX(-15em);
+    }
+    70%,100% {
+        transform: translateX(0);
+    }
+}
+@keyframes canv1 {
+    0%,15% {
+        transform: translateX(-15em);
+    }
+    70%,100% {
+        transform: translateX(0);
+    }
+}
+@keyframes canv2 {
+    0%,25% {
+        transform: translateX(-15em);
+    }
+    70%,100% {
+        transform: translateX(0);
+    }
+}
+.off-anim-reverse{
+    animation: canv-rev 3s ease-in-out;
+}
+@keyframes canv-rev {
+    50%{
+        transform: translateX(7em);
+    }
+    100% {
+        transform: translateX(15em);
+    }
+}
+@keyframes canv1 {
+    0%,15% {
+        transform: translateX(-21em);
+    }
+    70%,100% {
+        transform: translateX(0);
+    }
+}
+@keyframes canv2 {
+    0%,25% {
+        transform: translateX(-22em);
+    }
+    70%,100% {
+        transform: translateX(0);
+    }
+}
+.off-canv h1{
+    font-size: 36px;
+}
+.off-canv a {
+    color: var(--textcolor);
+    font-family: 'Mina';
+    margin-left: 0.2em;
+    text-decoration: none;
+}
+.off-canv svg {
+    margin-top: 0.15em;
+}
+.ms{
+    color: var(--textcolor);
+    text-decoration: none;
+}
+.ms:hover,.off-canv a:hover ,.head-name:hover,.cat-list:hover {
+    color: var(--hovercolor);
+}
+svg:hover{
+    fill: var(--hovercolor);
+}

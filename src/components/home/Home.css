@@ -1,0 +1,177 @@
+:root {
+    --heading: #2b2d42;
+    --textcolor: #6c757d;
+    --hovercolor: #003049;
+    --lightcolor: #adb5bd
+}
+/* sm */
+@media screen and (max-width: 765px){
+    .card-neu{
+        height: fit-content;
+        width: 80%;
+        margin: 0.5em;
+    }
+}
+/* tab */
+@media screen and (min-width: 765px) and (max-width: 768px){
+    .card-neu{
+        height: fit-content;
+        width: 40%;
+        margin: 0.5em 1.2em;
+    }
+}
+/* sm-tab */
+@media screen and (max-width: 768px){ 
+    .banner-img{
+        height: 40vh;
+        width: 92%;
+        margin: 6em 3vw 0 3vw;
+        border-radius: 1.5em;
+    }
+    .banner-img-1{
+       display: none; 
+    }
+    .card-img{
+        width: 90%;
+        padding-bottom: 1em;
+    }
+    .card-neu p{display: none;}
+    .rate-card .rate {display: flex;justify-content: center;font-size: 16pt;margin-top: 0.2em;}
+    .card-neu button{
+        width: 89%; 
+        margin: 0.5em 0.5em;
+    }
+}
+/* 4klap */
+@media screen and (min-width: 1024px) and (max-width:1440px){
+    .banner-grid{
+        background: none;
+        margin-bottom: -5em;
+    }
+}
+/* < mdlap */
+@media screen and (min-width: 1024px) {
+    .banner-img{
+        height: 60vh;
+        width: 58vw;
+        margin: 10em 2em;
+        border-radius: 3em;
+        box-shadow:  10px 10px 20px #524f4f,
+            -0.5px -0.5px 0.5px #c1dee8;
+    }
+    .banner-img-1{
+        height: 60vh;
+        width: 58vw; 
+        margin: -35em 0 0 4em;
+        border-radius: 3em;
+        box-shadow:  8px 8px 10px #524f4f,
+            -0.5px -0.5px 0.5px #c1dee8;
+    }
+    .card-neu{
+        height: fit-content;
+        width: 22em;
+        margin: 0.5em 1em;
+    }
+    .card-img{
+        width: 20em;
+    }
+    .card-img:hover{
+        transform: scale(1.01);
+        box-shadow:  3px 3px 5px #b8b3b3,
+            -0.5px -0.5px 0.5px #d7dddf;
+    }
+    .rate-card {display: flex; justify-content: space-between; margin:1em 1.7em -0.5em 1.7em;}
+    .rate-card .rate {font-size: 16pt;margin-top: -0.4em;}
+    .card-neu button{
+        margin: 0.5em 0.5em;
+        width: 20em;
+    }
+}
+
+@keyframes animes {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        background: none;
+        opacity: 1;
+    }
+}
+.anim{
+    animation: animes 5s ease-in;
+}
+.vl {
+    border-left: 1px solid var(--textcolor);
+    height: 2.5em;
+}
+.bs-name{
+    cursor: pointer;
+    color: var(--lightcolor);
+    text-transform: uppercase;
+}
+.bs-name.active{
+    color: var(--textcolor);
+}
+.bs-name span{
+    margin-left: 0.5em;
+}
+.bs-name.active:hover{
+    color: var(--hovercolor);
+}
+.bs-name:hover{
+    color: var(--textcolor);
+}
+.card-neu{
+    scale: 0.8;
+    opacity: 0.1;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry 100px;
+    border-radius: 51px;
+    background: none;
+    box-shadow:  5px 5px 5px #9d9d9d,
+        -1px -1px 0.5px #bbc6ca;
+}
+@keyframes fade-in {
+    to {
+        scale: 1; opacity: 1;
+    }
+}
+.card-img{
+    margin: 0.8em 1em;
+    border-radius: 51px;
+    transition: all 300ms ease-in;
+}
+.card-neu h5{
+    margin: -0.5em 0 -0.2em 0;
+    font-size: 20pt;
+    color: var(--heading);
+    font-family: 'Mina';
+    text-transform: uppercase;
+}
+.card-neu p{
+    margin-top: -0.1em;
+    font-size: 12pt;
+    color: var(--textcolor);
+    text-transform: capitalize;
+}
+.card-neu button{
+    margin: 0 1.05em 1.05em 1.05em;
+    height: 3em;
+    border-radius: 51px;
+    background: var(--textcolor);
+    border: none;
+    color: #d7dddf;
+    text-transform: uppercase;
+    font-size: 12pt;
+    transition: all 300ms linear;
+}
+.card-neu button:hover{
+    background: var(--lightcolor);
+    border: 1px solid #2b2d42;
+    color: #2b2d42;
+}
+.rate-card .rate{
+    color: #c9184a;
+    font-weight: 600;
+}
