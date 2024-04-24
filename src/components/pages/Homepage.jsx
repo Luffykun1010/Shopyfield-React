@@ -6,6 +6,7 @@ import Footer from './../footer/Footer';
 const Homepage = () => {
   return (
     <>
+      <title>Shopyfield</title>
       <Navbar />
       <Home />
       <Footer />

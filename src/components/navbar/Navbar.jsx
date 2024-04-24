@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Row, Col, Button, Offcanvas } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
                     </Col>
                     <Col></Col>
                     <Col className='text-center' sm={4}>
-                        <a href="" className='head-name'>SHOPYFIELD</a>
+                        <Link to="/" className='head-name'>SHOPYFIELD</Link>
                     </Col>
                     <Col></Col>
                     <Col sm={3}>
@@ -51,7 +52,7 @@ const Navbar = () => {
             <header className='fixed-top off-canvas'>
                 <Row className='anime py-4 w-100'>
                     <Col className='text-start' xs={6}>
-                        <a href="" className='head-name px-2'>SHOPYFIELD</a>
+                        <a href="" className='head-name px-4'>SHOPYFIELD</a>
                     </Col>
                     <Col xs={6} className='text-end'>
                         <Button className='offc-btn' onClick={handleShow}>

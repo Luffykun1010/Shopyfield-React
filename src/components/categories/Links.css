@@ -1,0 +1,12 @@
+.links{
+    margin: 10em 0 0 2em;
+    color: var(--textcolor);
+}
+.links a{
+    color: var(--textcolor);
+    text-decoration: none;
+}
+.links a:hover{
+    color: var(--hovercolor);
+    text-decoration: none;
+}

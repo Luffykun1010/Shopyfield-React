@@ -14,7 +14,13 @@
     border: #252422 2px solid;
     font-family: 'Mina';
     transition: all 200ms linear;
+    scale: 0;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry 60px;
 }
+
 .sign-in button:hover {
     color: #ced4da;
     background-color: #252422;
@@ -43,12 +49,22 @@
     color: #FEFAE0;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    scale: 0;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry 70px;
 }
 .first-footer a:hover{
     color: var(--hovercolor);
 }
 .footer{
     background: #2b2d42;
+    scale: 0;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry 5px;    
 }
 .foot-head{
     color: #ddb892;
@@ -68,6 +84,9 @@
     font-size: 12pt;
     padding: 0.3em 0 0 0;
 }
+.foot-link a:hover{
+    color: #9f834b;
+}
 .last-footer{
     background: #171717;
 }
@@ -86,4 +105,9 @@
 }
 .last-footer a:hover {
     color: #f94144;
+}
+@keyframes fade-in {
+    100% {
+        scale: 1; opacity: 1;
+    }
 }
